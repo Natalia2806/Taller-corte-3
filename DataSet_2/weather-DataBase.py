@@ -30,7 +30,7 @@ from sklearn.metrics import f1_score
 
 from sklearn.ensemble import RandomForestClassifier
 
-data = pd.read_csv('weatherAUS.csv')
+data = pd.read_csv('weatherAUS.csv')[:3000]
 
 #Normalizar y limpiar la data
 
@@ -46,8 +46,8 @@ data.dropna(axis=0, how='any', inplace=True)
 
 
 #Dividir la data en train y test 
-data_train = data[:38767]
-data_test = data[38767:]
+data_train = data[:471]
+data_test = data[471:]
 
 x = np.array(data_train.drop(['RainTomorrow'], axis=1))
 y = np.array(data_test.RainTomorrow)
