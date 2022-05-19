@@ -201,6 +201,7 @@ print(f'f1: {f1}')
 
 # RANDOM FOREST
 
+
 random_forest = RandomForestClassifier()
 
 # Entrenar el modelo
@@ -277,7 +278,6 @@ print(f'f1: {f1}')
 
 arbol = DecisionTreeClassifier()
 
-# Entrenamiento el modelo
 arbol.fit(x_train, y_train)
 
 # MÉTRICAS
